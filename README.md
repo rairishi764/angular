@@ -1,1 +1,2 @@
 # angular
+ng new <app>
