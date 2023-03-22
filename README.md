@@ -17,6 +17,11 @@ can change selector to work as attribute as `[app-selector]` and class as `(.app
 
 ## data binding
    string intrapolation - define var in component.ts and intrapolate the value to .html file using {{var/fn that reurns var}}
-   ![Alt text](../../../../../../../../var/folders/wx/1l627c_j435978frmcrkjcx80000gn/T/TemporaryItems/NSIRD_screencaptureui_O4H1Qi/Screen%20Shot%202023-03-21%20at%203.23.57%20PM.png)
+
+   property binding - bind property calues to vars in component.ts file ex: `[tag property] = "varVal"`
+
 ## event binding
+ bind the action property by (action) = "component.ts fn"
+ (click) = "onCreateServer()"
+
 ## two-way binding

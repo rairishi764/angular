@@ -12,5 +12,9 @@ export class ServerComponent {
 
   getServerStatus() {
     return this.serverStatus
+  
+  }
+  onCreateServer(){
+    this.serverStatus = "Server Created";
   }
 }
