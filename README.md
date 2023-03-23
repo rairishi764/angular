@@ -8,7 +8,8 @@
 
   npm install --save bootstrap@latest 
 
-  ng generate component <component>   
+  ng generate component <component>  
+  ng generate component <component> --specs false //no testing files created   
  The --open flag opens a browser to http://localhost:4200
 
 
@@ -46,4 +47,6 @@ providers option is used to include the services for the AppModulemodule.
 imports option is used to import other modules into the AppModulemodule.
 
 
- 
+ ## IONIC
+ npm uninstall -g ionic
+ npm install -g @ionic/cli
