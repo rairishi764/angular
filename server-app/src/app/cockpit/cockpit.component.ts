@@ -12,6 +12,8 @@ export class CockpitComponent {
   @Output() serverCreated = new EventEmitter<{serverName:string,serverContent:string}>();
   @Output() blueprintCreated = new EventEmitter<{serverName:string,serverContent:string}>();
 
+ // @Output('AliasName') blueprintCreated = new EventEmitter<{serverName:string,serverContent:string}>();
+
   onAddServer() {
     // the event emitter is called on button click to pass info to other component with required info
     this.serverCreated.emit(
