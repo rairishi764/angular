@@ -1,7 +1,15 @@
 <div class="row">
     <div class="col-xs-12">
-        <img src="" alt="" class="img-responsive">
+        <img src="{{recipe.imagePath}}" 
+             alt="{{recipe.name}}" 
+             class="img-responsive"
+             style="max-height: 300px;">
         
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <h2>{{recipe.name}}</h2>
     </div>
 </div>
 
@@ -13,8 +21,8 @@
             </button>
             <ul class="dropdown-menu">
                 <li><a href="">Add ingredients to list</a></li>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">Edit Recipe</a></li>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">Delete Recipe</a></li>
+                <li><a href="" target="_blank" rel="noopener noreferrer">Edit Recipe</a></li>
+                <li><a href="" target="_blank" rel="noopener noreferrer">Delete Recipe</a></li>
                 
             </ul>
         </div>
@@ -23,7 +31,7 @@
 
 <div class="row">
     <div class="col-xs-12">
-        Description
+        {{recipe.description}}
     </div>
 </div>
 
