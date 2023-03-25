@@ -25,4 +25,14 @@ onServerAdded(serverData:{serverName:string, serverContent:string}) {
         content: blueprintData.serverContent
       });
     }
+
+    // Life cyle hooks
+    ngOnInit(){} // called after a bound property changes
+    ngOnChange(){} // called once component is initialized
+    ngDoCheck(){} //called during every change detection run
+    ngAfterContentInit(){} // caleed after content(ng-content) has neen projected in view
+    ngAfterViewInit(){} //after view and child view have been initialized
+    ngAfterViewChecked(){} //after view and child view have been initialized
+    ngOnDestroy(){}// once component is destroyed
+
 }

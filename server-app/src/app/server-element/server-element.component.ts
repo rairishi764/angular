@@ -1,4 +1,4 @@
-import { Component, Input, ViewEncapsulation } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-server-element',
@@ -6,7 +6,7 @@ import { Component, Input, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./server-element.component.css'],
   //encapsulation: ViewEncapsulation.None // removes component level segregation of styles throughout project
 })
-export class ServerElementComponent {
+export class ServerElementComponent implements OnInit,OnChanges{
   //@Input makes the property bindable from outside the component
   //@Input() element:{type: string, name: string, content:string};
 
@@ -14,7 +14,14 @@ export class ServerElementComponent {
   //used to bind in app.component
   @Input('srvElement') element:{type: string, name: string, content:string};
 
-  constructor(){}
-
+  constructor(){
+    console.log('constructor called')
+  }
+  ngOnInit(){
+    console.log("onInit called")
+  }
+  ngOnChanges(){
+    console.log("ngOnChange called")
+  }
 
 }
