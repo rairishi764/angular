@@ -8,7 +8,8 @@ import { Recipe } from '../recipe.model';
 })
 export class RecipeListComponent {
   recipes:Recipe[] = [
-    new Recipe('A','A-desc','https://images.immediate.co.uk/production/volatile/sites/30/2022/08/Chicken-Tikka-99647a6.jpg?quality=90&webp=true&resize=600,545')
+    new Recipe('A','A-desc','https://images.immediate.co.uk/production/volatile/sites/30/2022/08/Chicken-Tikka-99647a6.jpg?quality=90&webp=true&resize=600,545'),
+    new Recipe('B','B-desc','https://images.immediate.co.uk/production/volatile/sites/30/2022/08/Chicken-Tikka-99647a6.jpg?quality=90&webp=true&resize=600,545')
   ];
   constructor(){}
 

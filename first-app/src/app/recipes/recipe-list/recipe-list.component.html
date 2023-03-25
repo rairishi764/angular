@@ -8,22 +8,9 @@
 <div  class="row">
     <div class="col-xs-12">
         
-        <a href="" class="list-group" *ngFor="let item of recipes">
-            <div class="list-group-item d-flex justify-content-between align-items-center">
-                <div class="row">
-                <h4 class="list-group-item-heading">{{item.name}}</h4>
-                <p class="list-group-item-text">{{item.description}}</p>
-            </div>
-            <span class="badge bg-dark">
-                <img [src]=item.imagePath
-                 alt="{{item.name}}" 
-                 class="img-responsive" 
-                 style="max-height:150px">
-            </span>
-        </div>
-        </a>
+        
+        <app-recipe-item *ngFor="let item of recipes" [recipeItem] = "item"></app-recipe-item>
     </div>
 
 </div>
-<app-recipe-item></app-recipe-item>
-<p>recipe-list works!</p>
+

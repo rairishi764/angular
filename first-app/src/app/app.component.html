@@ -1,14 +1,11 @@
 
-<app-header></app-header>
+<app-header (menuSelect) = "onNavigate($event)"></app-header>
 <div class="container">
   <div class="row">
-    <div class="col">
-      <app-recipe-list></app-recipe-list>
+    <div class="col-md-12">
+      <app-recipe-list *ngIf="loadedFeature==1"></app-recipe-list>
+      <app-shopping-list *ngIf="loadedFeature==2"></app-shopping-list>
     </div>
-    <div class="col">
-      <app-recipe-detail></app-recipe-detail>
-    </div>
-    <app-shopping-list></app-shopping-list>
   </div>
 </div>
 
