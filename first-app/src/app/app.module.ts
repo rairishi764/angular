@@ -10,7 +10,7 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { RecipesComponent } from './recipes/recipes.component';
 import { FormsModule } from '@angular/forms';
-import { DropdownDirective } from './dropdown.directive';
+import { DropdownDirective } from './shared/dropdown.directive';
 
 //component added to declaration for app to know about existence of the component
 @NgModule({
