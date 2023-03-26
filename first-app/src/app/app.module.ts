@@ -9,6 +9,8 @@ import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-it
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { RecipesComponent } from './recipes/recipes.component';
+import { FormsModule } from '@angular/forms';
+import { DropdownDirective } from './dropdown.directive';
 
 //component added to declaration for app to know about existence of the component
 @NgModule({
@@ -20,10 +22,12 @@ import { RecipesComponent } from './recipes/recipes.component';
     RecipeItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
-    RecipesComponent
+    RecipesComponent,
+    DropdownDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
